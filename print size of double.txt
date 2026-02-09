@@ -1,0 +1,13 @@
+Size of double
+Test Case 1
+Output: 8
+Test Case 2
+Output: 8
+
+program:
+#include<stdio.h>
+int main(){
+    double mydouble;
+    printf("%zu",sizeof(mydouble));
+    return 0;
+}
