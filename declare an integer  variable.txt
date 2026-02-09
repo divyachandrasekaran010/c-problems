@@ -1,0 +1,16 @@
+Declare an integer variable and print it
+Test Case 1
+Output: 10
+Test Case 2
+
+Output: 50
+
+
+program:
+#include<stdio.h>
+int main(){
+    int a;
+    scanf("%d",&a);
+    printf("%d",a);
+    return 0;
+}
