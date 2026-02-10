@@ -1,0 +1,20 @@
+Apply post-increment and print the value.
+Test Case 1
+Input: 5
+Output: 5
+Test Case 2
+Input: 9
+Output: 9
+Test Case 3
+Input: 0
+Output: 0
+
+program:
+#include<stdio.h>
+int main(){
+    int a;
+    printf("Input:");
+    scanf("%d",&a);
+    printf("%d",a++);
+    return  0;
+}
