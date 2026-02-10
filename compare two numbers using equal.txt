@@ -1,0 +1,22 @@
+Compare two numbers using ==.
+Test Case 1
+Input: 5 5
+Output: 1
+Test Case 2
+Input: 3 4
+Output: 0
+Test Case 3
+
+Input: 0 0
+Output: 1
+
+program:
+#include<stdio.h>
+int main(){
+    int a,b;
+    printf("Input:");
+    scanf("%d %d",&a,&b);
+     int c=a==b;
+    printf("%d",c);
+    return  0;
+}
