@@ -1,0 +1,21 @@
+Add three integers and print the result.
+Test Case 1
+Input: 2 3 5
+Output: 10
+Test Case 2
+Input: 1 4 5
+Output: 10
+Test Case 3
+Input: 3 3 4
+Output: 10
+
+program:
+#include<stdio.h>
+int main(){
+    int a,b,c;
+    printf("Input:");
+    scanf("%d %d %d",&a,&b,&c);
+    int d=a+b+c;
+    printf("%d",d);
+    return  0;
+}
