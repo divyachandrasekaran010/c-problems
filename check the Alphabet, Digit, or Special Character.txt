@@ -1,0 +1,21 @@
+Alphabet, Digit, or Special Character
+Input: 9
+Output: Digit
+Explanation: Use ASCII values to classify the character.
+
+
+#include<stdio.h>
+int main(){
+    char ch;
+    printf("Input:");
+    scanf("%c",&ch);
+    if(ch>='a'&&ch<='z'||ch>='A'&&ch<='Z'){
+        printf("alphabet");
+    }
+    else if(ch>='0'&&ch<='9'){
+        printf("digit");
+    }
+    else{
+        printf("special characters");
+    }
+}
