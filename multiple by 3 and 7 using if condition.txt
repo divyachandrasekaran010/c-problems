@@ -1,0 +1,17 @@
+Multiple of 3 and 7
+Input: 21
+Output: Multiple of both 3 and 7
+Explanation: Condition: num % 3 == 0 && num % 7 == 0.
+
+#include<stdio.h>
+int main(){
+    int num;
+    printf("Input:");
+    scanf("%d",&num);
+    if(num%3==0 && num%7==0){
+        printf("multiple of both 3 and 7");
+    }
+    else{
+        printf("its not multiple by 3 and 7");
+    }
+}
