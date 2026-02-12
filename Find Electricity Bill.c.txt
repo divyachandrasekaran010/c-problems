@@ -1,0 +1,20 @@
+Electricity Bill
+Input: 120 units
+Output: Bill amount = Rs. 600
+Explanation: Charges calculated using slab rates with if-else.
+
+
+#include<stdio.h>
+int main(){
+    int bills,units;
+    printf("Input:");
+    scanf("%d",&units);
+    if(units<=100){
+        bills=units*5;
+    }
+    else{
+       bills=units*5;
+    }
+    printf(" Rs.%d ",bills);
+    return 0;
+}
