@@ -1,0 +1,21 @@
+Simple Calculator (Switch)
+Input: 5 + 3
+Output: Result = 8
+Explanation: Operator decides operation using switch.
+
+
+#include<stdio.h>
+int main(){
+    int a,b;
+    char operator;
+    printf("input:");
+    scanf("%d %c %d",&a,&operator,&b);
+    switch(operator){
+    case '+':
+    printf("Result=%d",a+b);
+    break;
+    default:
+    printf("Invalid ");
+    }
+    return 0;
+}   
