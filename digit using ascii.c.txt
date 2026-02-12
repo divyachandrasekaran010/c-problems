@@ -1,0 +1,18 @@
+Digit Using ASCII
+Input: 7
+Output: Digit
+Explanation: ASCII of 0–9 → digit.
+
+
+#include<stdio.h>
+int main(){
+    char ch;
+    printf("Input:");
+    scanf("%c",&ch);
+    if(ch>='0'&&ch<='9'){
+        printf("digit");
+    }
+    else{
+        printf("its not digit");
+    }
+}
