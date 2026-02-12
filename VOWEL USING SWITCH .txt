@@ -1,0 +1,27 @@
+Vowel Using Switch
+Input: E
+Output: Vowel
+Explanation: Multiple cases (a,e,i,o,u) in switch.
+
+#include<stdio.h>
+int main(){
+    char vowels;
+    printf("input:");
+    scanf("%c",&vowels);
+    switch(vowels){
+    case 'a':
+    case 'A':
+    case 'e':
+    case 'E':
+    case 'i':
+    case 'o':
+    case 'O':
+    case 'u':
+    case 'U':
+    printf("vowel");
+    break;
+    default:
+    printf("its not vowel");
+    }
+    return 0;
+}   
