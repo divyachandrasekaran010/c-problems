@@ -1,0 +1,13 @@
+Smallest Using Ternary Operator
+Input: 8 3
+Output: 3 is smallest
+Explanation: Uses condition ? value1 : value2.
+
+#include<stdio.h>
+int main(){
+    int a,b,min ;
+    printf("Input:");
+    scanf("%d %d",&a,&b);
+    min=a<b?a:b;
+    printf("%d is smallest",min);
+}
