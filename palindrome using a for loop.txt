@@ -1,0 +1,20 @@
+Write a program to check if the given number N is a palindrome using a for loop.
+
+#include<stdio.h>
+int main(){
+    int n,rev=0;
+    printf("Input:");
+    scanf("%d",&n);
+    int temp=n;
+    for(;n!=0;n=n/10){
+     int rem=n%10;
+    rev=rev*10+rem;
+    } 
+   if(temp==rev){
+       printf("output:yes");
+   }
+   else{
+       printf("no");
+   }
+   return 0;
+}
