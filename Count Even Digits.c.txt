@@ -1,0 +1,30 @@
+Problem Statement
+Write a program to count how many even digits are present in the given number N using a for
+loop.
+Input Format
+Integer N
+Output Format
+Print the count
+Test Cases
+Input: 1234 → Output: 2
+Input: 246 → Output: 3
+Input: 135 → Output: 0
+
+#include<stdio.h>
+
+int main(){
+    int N,count=0;
+    
+    printf("Input:");
+    scanf("%d",&N);
+    
+    for(;N!=0;N=N/10){
+        int digit=N%10;
+        
+        if(digit%2==0){
+        count++;
+        }
+    }
+    printf("output:%d",count);
+    return 0;
+}
