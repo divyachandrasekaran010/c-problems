@@ -1,0 +1,22 @@
+Calculate total monthly expense and count days where expense exceeded ₹1000.
+
+#include<stdio.h>
+int main(){
+   int days,expenses,i;
+   int total=0,count=0;
+   printf("input:");
+   scanf("%d\n",&days);
+   
+   for(i=0;i<days;i++){
+       scanf("%d",&expenses);
+       total+=expenses;
+       
+       if(expenses>1000){
+           count++;
+       }
+       
+   }
+   printf("Total Expenses:%d\n",total);
+   printf("overspend days:%d",count);
+   return 0;
+}
