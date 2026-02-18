@@ -1,0 +1,12 @@
+Salary Deduction Calculator
+
+#include<stdio.h>
+int main(){
+    int salary,absent_days,final_salary;
+    printf("Input");
+    scanf("%d\n%d",&salary,&absent_days);
+    final_salary=salary-(absent_days*100);
+    printf("final_salary:%d",final_salary);
+    return 0;
+    
+}
