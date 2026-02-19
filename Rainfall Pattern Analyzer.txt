@@ -1,0 +1,25 @@
+Calculate total rainfall and count days where rainfall exceeded 50 mm.
+Input
+5
+30 60 45 80 20
+
+Output
+Total Rainfall: 235
+Heavy Rain Days: 2
+
+
+#include<stdio.h>
+int main(){
+    int i,days,n,total=0,count=0;
+    scanf("%d",&days);
+    for(i=0;i<days;i++){
+        scanf("%d",&n);
+        total+=n;
+        if(n>=50){
+            count++;
+        }
+    }
+    printf("Total rainfall:%d\n",total);
+    printf("heavy rain days:%d",count);
+    return 0;
+}
