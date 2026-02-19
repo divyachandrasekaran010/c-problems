@@ -1,0 +1,24 @@
+Server Error Burst Analyzer
+Calculate total errors and count critical hours (>50 errors).
+Input
+6
+30 60 45 80 20 55
+Output
+Total Errors: 290
+Critical Hours: 3
+
+#include<stdio.h>
+int main(){
+    int n,error,i,total=0,count=0;
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        scanf("%d",&error);
+        total+=error;
+        if(error>50){
+            count++;
+        }
+    }
+    printf("Total Errors:%d\n",total);
+    printf("critical hours:%d",count);
+    return 0;
+}
