@@ -1,0 +1,33 @@
+Factory Production Loss Tracker
+Problem Statement
+Calculate total loss and count high-loss days (loss &gt; 100 units).
+Input Format
+Integer N
+N integers (daily loss units)
+Output Format
+
+Total Loss
+High Loss Days
+Test Cases
+Input
+4
+80 120 150 60
+
+Output
+Total Loss: 410
+High Loss Days: 2
+#include<stdio.h>
+int main(){
+    int i,n,loss,total=0,count=0;
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        scanf("%d",&loss);
+        total+=loss;
+        if(loss>100){
+            count++;
+        }
+    }
+    printf("Total loss:%d\n",total);
+    printf("high loss days:%d",count);
+    return 0;
+}
