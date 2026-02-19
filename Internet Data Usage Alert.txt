@@ -1,0 +1,32 @@
+Internet Data Usage Alert:
+Problem Statement
+Calculate total data used and count days exceeding 2 GB.
+Input Format
+Integer N
+N integers (daily usage in GB)
+Output Format
+Total Data
+High Usage Days
+Test Cases
+Input
+5
+1 3 2 4 1
+Output
+Total Data: 11
+High Usage Days: 2
+
+#include<stdio.h>
+int main(){
+    int i,n,gb,total=0,count=0;
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        scanf("%d",&gb);
+        total+=gb;
+        if(gb>2){
+            count++;
+        }
+    }
+    printf("total data:%d\n",total);
+    printf("high usage days:%d",count);
+    return 0;
+}
