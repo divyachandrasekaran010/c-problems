@@ -1,0 +1,21 @@
+Mobile Data Pack Exhaustion Predictor (While Loop)
+
+#include<stdio.h>
+int main(){
+    int data,N;
+    scanf("%d%d",&data,&N);
+    int use,day=-1,i=0;
+    while(i<N){
+        scanf("%d",&use);
+        data-=use;
+        if(data<=0&&day==-1)
+           day=i+1;
+           i++;
+    }
+    if(day==-1)
+       printf("Exhausted day:not exhausted\n");
+    else
+       printf("Exhausted Day:%d\n",day);
+    printf("overused Data:%d\n",(data<0)?-data:0);
+    return 0;
+}
