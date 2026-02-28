@@ -1,0 +1,34 @@
+Online Shopping Wallet Balance Monitor (While Loop)
+Test Cases
+Input
+3000
+5
+500 1200 700 800 400
+Output
+Successful Purchases: 3
+Final Balance: 600
+Input
+2000
+3
+500 500 500
+Output
+Successful Purchases: 3
+Final Balance: 500
+
+#include <stdio.h>
+int main() {
+    int balance, N;
+    scanf("%d%d", &balance, &N);
+    int purchase, success = 0, i = 0;
+    while(i < N) {
+        scanf("%d", &purchase);
+        if(balance < purchase)
+            break;
+        balance -= purchase;
+        success++;
+        i++;
+    }
+    printf("Successful Purchases: %d\n", success);
+    printf("Final Balance: %d\n", balance);
+    return 0;
+}
