@@ -1,20 +1,37 @@
-Rotate Left by K:
+Rotate Left by K
 TEST CASE 
 1)5 → 1 2 3 4 5, K=2 → 3 4 5 1 2
 2)4 → 10 20 30 40, K=1 → 20 30 40 10
-3)3 → 5 6 7, K=2 → 7 5 6
 
-#include <stdio.h>
-int main(){
-    int n,k;
+#include<stdio.h>
+int main()
+{
+    int n,k,i;
+    int arr[50],temp[50];
+    printf("Enter size: ");
     scanf("%d",&n);
-    int arr[n];
-    for(int i=0;i<n;i++)
+    printf("Enter elements:\n");
+    for(i=0;i<n;i++)
+    {
         scanf("%d",&arr[i]);
+    }
+    printf("Enter K: ");
     scanf("%d",&k);
-    for(int i=k;i<n;i++)
+    for(i=0;i<k;i++)
+    {
+        temp[i]=arr[i];
+    }
+    for(i=k;i<n;i++)
+    {
+        arr[i-k]=arr[i];
+    }
+    for(i=0;i<k;i++)
+    {
+        arr[n-k+i]=temp[i];
+    }
+    printf("Rotated array:\n");
+    for(i=0;i<n;i++)
+    {
         printf("%d ",arr[i]);
-    for(int i=0;i<k;i++)
-        printf("%d ",arr[i]);
-    return 0;
+    }
 }
