@@ -1,0 +1,35 @@
+Leader Elements
+
+TEST CASE 
+1)6 → 16 17 4 3 5 2 → 17 5 2
+2)4 → 7 6 5 4 → 7 6 5 4
+3)5 → 5 10 3 2 1 → 10 3 2 1
+
+#include<stdio.h>
+int main()
+{
+    int n,i,max;
+    int arr[50],leader[50],k=0;
+    printf("Enter size: ");
+    scanf("%d",&n);
+    printf("Enter elements:\n");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    max=arr[n-1];
+    leader[k++]=max;
+    for(i=n-2;i>=0;i--)
+    {
+        if(arr[i] > max)
+        {
+            max=arr[i];
+            leader[k++]=max;
+        }
+    }
+    printf("Leaders: ");
+    for(i=k-1;i>=0;i--)
+    {
+        printf("%d ",leader[i]);
+    }
+}
