@@ -1,0 +1,30 @@
+Special Character Counter in Passwords
+
+Test Cases
+Input: venky@123 → 1
+ Input: #AI$2026 → 2
+ Input: Hello123 → 0
+
+#include <stdio.h>
+
+int main()
+{
+    char str[100];
+    int i, count = 0;
+
+    scanf("%s", str);
+
+    for(i = 0; str[i] != '\0'; i++)
+    {
+        if(!(str[i] >= 'a' && str[i] <= 'z') &&
+           !(str[i] >= 'A' && str[i] <= 'Z') &&
+           !(str[i] >= '0' && str[i] <= '9'))
+        {
+            count++;
+        }
+    }
+
+    printf("%d", count);
+
+    return 0;
+}
